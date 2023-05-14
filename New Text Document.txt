@@ -1,0 +1,18 @@
+Things to learn:
+
+vh in css - https://www.educative.io/answers/what-are-css-viewport-units
+Date object, set date, get date, Math methods
+
+The For Of Loop: 
+	const cars = ["BMW", "Volvo", "Mini"];
+
+	let text = "";
+	for (let x of cars) {
+	  text += x + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+
+
+
+
+

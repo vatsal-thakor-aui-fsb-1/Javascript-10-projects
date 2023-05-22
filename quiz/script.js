@@ -56,6 +56,7 @@ function submitAns(){
   for(let i = 0; i < answers.length; i++){
     if(answers[i].checked){
       answer = answers[i].value;
+      answers[i].checked = false;
     }
   }
 
@@ -71,7 +72,7 @@ function submitAns(){
     i++;
       if(i>=quizData.length){
         document.getElementsByTagName("button")[0].disabled = true;
-        document.getElementById("result").innerHTML = "You have given " + wrongAnswers + " answers." ;
+        document.getElementById("result").innerHTML = "You have given " + wrongAnswers + " wrong answers." ;
       } 
       else{
         pullQue();

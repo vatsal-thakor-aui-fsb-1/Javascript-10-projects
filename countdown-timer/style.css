@@ -21,15 +21,30 @@ body{
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+  color: #e74c3c;
 }
 
 .big-text {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1;
   margin: 0 2rem;
 }
 
 .countdown-container span {
   font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#days{
+  color: #2c3e50;
+}
+#hours{
+  color: #27ae60;
+}
+#mins{
+  color: #8e44ad;
+}
+#secs{
+  color: #2980b9;
 }

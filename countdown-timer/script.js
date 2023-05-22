@@ -41,11 +41,10 @@ function countDownFun(){
   const Tdate = new Date();
 
   const totalSec = (Ddate - Tdate) / 1000;
-  const Dday = Math.floor(totalSec / 3600 / 24); // Total secs are devided by 60sec(min), 60mins(hours), 24hours ->days
-  const Dhour = Math.floor(totalSec / 3600) % 24; // Total secs are devided by 60sec(min), 60mins ->hours and it needs to devide by 24hours(days) and reminder would be hours
-  const Dmin = Math.floor(totalSec / 60) % 60; // Total secs are devided by 60sec(min) and it need to devided by 60mins(hours) and reminder would be mins
   const Dsec = Math.floor(totalSec) % 60; // Total secs are devided by 60sec(mins) and reminder would be secs
-  
+  const Dmin = Math.floor(totalSec / 60) % 60; // Total secs are devided by 60sec(min) and it need to devided by 60mins(hours) and reminder would be mins
+  const Dhour = Math.floor(totalSec / 3600) % 24; // Total secs are devided by 60sec(min), 60mins ->hours and it needs to devide by 24hours(days) and reminder would be hours
+  const Dday = Math.floor(totalSec / 3600 / 24); // Total secs are devided by 60sec(min), 60mins(hours), 24hours ->days
   daysEl.innerHTML= Dday;
   hoursEl.innerHTML= Dhour;
   minsEl.innerHTML= Dmin;

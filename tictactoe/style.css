@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: gray;
+}
+
+.box {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  margin: auto;
+}
+

@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8rem;
+}
+.calculator{
+  width:30%;
+  border: 1px solid lightgray;
+  margin: auto;
+  padding: 1rem;
+}
+.input-container{
+  height:50px;
+  border: 1px solid gray;
+}
+.operators, .number{
+  display: flex;
+  justify-content:space-between;
+}
+
+.empty-button{
+  visibility: hidden;
+}
+button {
+  width:23%;
+  height:50px;
+  border: 1px solid gray;
+  display: inline-block;
+  margin-top: 1rem;
+}
